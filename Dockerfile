@@ -5,6 +5,7 @@ RUN apt-get update
 
 # Installing ROS-melodic
 RUN apt-get install -y gnupg2
+RUN apt-get update
 RUN apt-get install -y curl
 RUN apt-get install -y lsb-core
 ARG DEBIAN_FRONTEND=noninteractive
